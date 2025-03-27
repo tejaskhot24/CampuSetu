@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board - College Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="notices_style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a  class="nav-logo">Campus Setu</a>
+            <ul class="nav-menu">
+                <li><a href="student.html">Home</a></li>
+                <li><a href="student.html">Dashboard</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="notices.html" class="active">Notices</a></li>
+                <li class="nav-profile">
+                    <a href="profile.html">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="notices-container">
+            <div class="page-header">
+                <h1>Notice Board</h1>
+                <div class="header-actions">
+                    <select class="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="academic">Academic</option>
+                        <option value="events">Events</option>
+                        <option value="exam">Examination</option>
+                        <option value="general">General</option>
+                    </select>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search notices...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notices-grid">
+                <!-- Important Notice -->
+                <div class="notice-card important">
+                    <div class="notice-header">
+                        <span class="notice-badge">Important</span>
+                        <span class="notice-date">March 11, 2025</span>
+                    </div>
+                    <div class="notice-content">
+                        <h3>End Semester Examination Schedule</h3>
+                        <p>The end semester examinations for all departments will commence from April 15, 2025. The detailed schedule has been published.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> Examination</span>
+                            <span><i class="fas fa-clock"></i> Posted 2 hours ago</span>
+                        </div>
+                        <div class="notice-attachments">
+                            <a href="#" class="attachment">
+                                <i class="fas fa-file-pdf"></i>
+                                Exam Schedule.pdf
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Notice -->
+                <div class="notice-card event">
+                    <div class="notice-header">
+                        <span class="notice-badge">Event</span>
+                        <span class="notice-date">March 10, 2025</span>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Annual Tech Fest - TechVista 2025</h3>
+                        <p>Join us for the biggest technical festival of the year. Participate in coding competitions, robotics workshops, and project exhibitions.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> Events</span>
+                            <span><i class="fas fa-clock"></i> Posted 1 day ago</span>
+                        </div>
+                        <div class="notice-actions">
+                            <button class="btn-register">Register Now</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Notice -->
+                <div class="notice-card academic">
+                    <div class="notice-header">
+                        <span class="notice-badge">Academic</span>
+                        <span class="notice-date">March 9, 2025</span>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Course Registration for Next Semester</h3>
+                        <p>The course registration portal for the upcoming semester will be open from March 20 to March 25, 2025. Please ensure timely registration.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> Academic</span>
+                            <span><i class="fas fa-clock"></i> Posted 2 days ago</span>
+                        </div>
+                        <div class="notice-info">
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Registration Period: March 20-25</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Late registration fees will apply after deadline</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General Notice -->
+                <div class="notice-card general">
+                    <div class="notice-header">
+                        <span class="notice-badge">General</span>
+                        <span class="notice-date">March 8, 2025</span>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Library Timings Update</h3>
+                        <p>The college library will remain open for extended hours during the examination preparation period, from 8 AM to 10 PM on all days.</p>
+                        <div class="notice-meta">
+                            <span><i class="fas fa-tag"></i> General</span>
+                            <span><i class="fas fa-clock"></i> Posted 3 days ago</span>
+                        </div>
+                        <div class="notice-schedule">
+                            <div class="schedule-item">
+                                <span class="day">Weekdays</span>
+                                <span class="time">8:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Weekends</span>
+                                <span class="time">9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notices-pagination">
+                <button class="page-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                    Previous
+                </button>
+                <div class="page-numbers">
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>10</span>
+                </div>
+                <button class="page-btn next">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CyberSquad. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

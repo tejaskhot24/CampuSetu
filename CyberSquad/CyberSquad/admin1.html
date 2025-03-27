@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - College Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin1_style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Campus<span>Setu</span></h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class="fas fa-th-large"></i>
+                    <span class="menu-title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user-graduate"></i>
+                    <span class="menu-title">Students</span>
+                    <span class="menu-badge">152</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span class="menu-title">Faculty</span>
+                    <span class="menu-badge">38</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-book"></i>
+                    <span class="menu-title">Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="notices.html">
+                    <i class="fas fa-bell"></i>
+                    <span class="menu-title">Notices</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="menu-title">Events</span>
+                </a>
+            </li>
+            <div class="sidebar-divider"></div>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span class="menu-title">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-question-circle"></i>
+                    <span class="menu-title">Help</span>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="menu-title">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-title">
+                <h1>Admin Dashboard</h1>
+                <p>Welcome back, <span class="text-primary">Administrator</span>! Here's what's happening today.</p>
+            </div>
+            <div class="header-actions">
+                <button class="toggle-sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="notification-badge">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge-count">5</span>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">A</div>
+                    <div class="user-info">
+                        <span class="user-name">Admin</span>
+                        <span class="user-role">Administrator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>8.2%</span>
+                    </div>
+                </div>
+                <div class="stat-value">152</div>
+                <div class="stat-label">Students</div>
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>4.5%</span>
+                    </div>
+                </div>
+                <div class="stat-value">38</div>
+                <div class="stat-label">Faculty</div>
+                <div class="stat-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <i class="fas fa-book"></i>
+                    <div class="stat-change negative">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>1.3%</span>
+                    </div>
+                </div>
+                <div class="stat-value">26</div>
+                <div class="stat-label">Courses</div>
+                <div class="stat-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <i class="fas fa-calendar-check"></i>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>12.7%</span>
+                    </div>
+                </div>
+                <div class="stat-value">87%</div>
+                <div class="stat-label">Attendance</div>
+                <div class="stat-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Users Section -->
+        <div class="dashboard-section">
+            <div class="section-header">
+                <h2 class="section-title">Recent Users</h2>
+                <a href="#" class="section-action">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="table-responsive">
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Joined Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="user-info-cell">
+                                    <div class="table-user-avatar" style="background: #3498db;">GS</div>
+                                    <div class="table-user-info">
+                                        <span class="table-user-name">Gomtesh Shetti</span>
+                                        <span class="table-user-email">gomtesh.shetti@example.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Student</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>Mar 10, 2025</td>
+                            <td>
+                                <div class="table-action-cell">
+                                    <a href="#" class="table-action view"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="table-action edit"><i class="fas fa-pen"></i></a>
+                                    <a href="#" class="table-action delete"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-info-cell">
+                                    <div class="table-user-avatar" style="background: #e74c3c;">IM</div>
+                                    <div class="table-user-info">
+                                        <span class="table-user-name">Irfan Mulla</span>
+                                        <span class="table-user-email">irfan.mulla@example.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Faculty</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>Mar 08, 2025</td>
+                            <td>
+                                <div class="table-action-cell">
+                                    <a href="#" class="table-action view"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="table-action edit"><i class="fas fa-pen"></i></a>
+                                    <a href="#" class="table-action delete"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-info-cell">
+                                    <div class="table-user-avatar" style="background: #2ecc71;">NM</div>
+                                    <div class="table-user-info">
+                                        <span class="table-user-name">Nihal Makandar</span>
+                                        <span class="table-user-email">nihal.makandar@example.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Student</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td>Mar 05, 2025</td>
+                            <td>
+                                <div class="table-action-cell">
+                                    <a href="#" class="table-action view"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="table-action edit"><i class="fas fa-pen"></i></a>
+                                    <a href="#" class="table-action delete"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-info-cell">
+                                    <div class="table-user-avatar" style="background: #9b59b6;">ML</div>
+                                    <div class="table-user-info">
+                                        <span class="table-user-name">Mohan Lad</span>
+                                        <span class="table-user-email">mohan.lad@example.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Faculty</td>
+                            <td><span class="status-badge status-inactive">Inactive</span></td>
+                            <td>Feb 28, 2025</td>
+                            <td>
+                                <div class="table-action-cell">
+                                    <a href="#" class="table-action view"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="table-action edit"><i class="fas fa-pen"></i></a>
+                                    <a href="#" class="table-action delete"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Quick Actions -->
+            <div class="col-lg-8">
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Quick Actions</h2>
+                        <a href="#" class="section-action">More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="action-cards">
+                        <div class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <h3 class="action-title">Add Student</h3>
+                            <p class="action-description">Register a new student in the system</p>
+                        </div>
+                        <div class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3 class="action-title">Add Faculty</h3>
+                            <p class="action-description">Register a new faculty member</p>
+                        </div>
+                        <div class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3 class="action-title">Add Course</h3>
+                            <p class="action-description">Create a new course curriculum</p>
+                        </div>
+                        <div class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h3 class="action-title">Add Notice</h3>
+                            <p class="action-description">Post a new notice for students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Activity -->
+            <div class="col-lg-4">
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Recent Activity</h2>
+                        <a href="#" class="section-action">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="activity-timeline">
+                        <div class="activity-item important">
+                            <div class="activity-dot"></div>
+                            <div class="activity-content">
+                                <div class="activity-title">New student registration approved</div>
+                                <div class="activity-details">
+                                    <span>By <span class="activity-user">Admin</span></span>
+                                    <span>10 mins ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-item success">
+                            <div class="activity-dot"></div>
+                            <div class="activity-content">
+                                <div class="activity-title">Course schedule updated</div>
+                                <div class="activity-details">
+                                    <span>By <span class="activity-user">Dr. Omkar</span></span>
+                                    <span>1 hour ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-item warning">
+                            <div class="activity-dot"></div>
+                            <div class="activity-content">
+                                <div class="activity-title">Exam notice published</div>
+                                <div class="activity-details">
+                                    <span>By <span class="activity-user">Admin</span></span>
+                                    <span>3 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-item info">
+                            <div class="activity-dot"></div>
+                            <div class="activity-content">
+                                <div class="activity-title">System maintenance completed</div>
+                                <div class="activity-details">
+                                    <span>By <span class="activity-user">System</span></span>
+                                    <span>Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle sidebar
+        document.querySelector('.toggle-sidebar').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('sidebar-collapsed');
+            document.querySelector('.main-content').classList.toggle('main-content-expanded');
+        });
+        
+        // Mobile sidebar toggle
+        document.querySelector('.toggle-sidebar').addEventListener('click', function() {
+            if (window.innerWidth < 992) {
+                document.querySelector('.sidebar').classList.toggle('show');
+            }
+        });
+        
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth < 992 && !event.target.closest('.sidebar') && !event.target.closest('.toggle-sidebar')) {
+                document.querySelector('.sidebar').classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

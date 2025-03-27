@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard - College Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="faculty_style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-graduation-cap fa-2x"></i>
+            <h3>CampusSetu</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span>My Students</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-book"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-tasks"></i>
+                    <span>Assignments</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-check-square"></i>
+                    <span>Attendance</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Grades</span>
+                </a>
+            </li>
+            <div class="sidebar-divider"></div>
+            <li>
+                <a href="#">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Timetable</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-bell"></i>
+                    <span>Announcements</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-file-export"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+            <div class="sidebar-divider"></div>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-title">
+                <h1>Faculty Dashboard</h1>
+                <p>Welcome back, Chetan Kenchagoudar</p>
+            </div>
+            <div class="user-profile">
+                <div class="user-avatar">CK</div>
+                <div class="user-info">
+                    <span class="user-name">Prof. Chetan Kenchagoudar</span>
+                    <span class="user-role">Professor, Data Scientist</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <div>
+                        <div class="stat-value">126</div>
+                        <div class="stat-label">Total Students</div>
+                    </div>
+                    <div class="stat-icon students">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="stat-info">Across 5 classes</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <div>
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Active Courses</div>
+                    </div>
+                    <div class="stat-icon courses">
+                        <i class="fas fa-book"></i>
+                    </div>
+                </div>
+                <div class="stat-info">Current semester</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <div>
+                        <div class="stat-value">87%</div>
+                        <div class="stat-label">Average Attendance</div>
+                    </div>
+                    <div class="stat-icon attendance">
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
+                <div class="stat-info">Last updated: Today</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <div>
+                        <div class="stat-value">23</div>
+                        <div class="stat-label">Assignments to Grade</div>
+                    </div>
+                    <div class="stat-icon assignments">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                </div>
+                <div class="stat-info">8 due soon</div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="dashboard-section"style="background-color: #1d3557"; >
+            <div class="section-header">
+                <h2 class="section-title "style="color: white";>Quick Actions</h2>
+            </div>
+            <div class="quick-actions-grid">
+                <div class="quick-action">
+                    <div class="quick-action-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="quick-action-title">Take Attendance</div>
+                </div>
+                <div class="quick-action">
+                    <div class="quick-action-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="quick-action-title">Create Assignment</div>
+                </div>
+                <div class="quick-action">
+                    <div class="quick-action-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="quick-action-title">Grade Submissions</div>
+                </div>
+                <div class="quick-action">
+                    <div class="quick-action-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="quick-action-title">Make Announcement</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="two-column-grid">
+            <!-- Upcoming Classes -->
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <h2 class="section-title">Today's Classes</h2>
+                    <a href="#" class="section-action">View Schedule <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="schedule-time">09:00 - 10:30 AM</div>
+                        <div class="schedule-content">
+                            <div class="schedule-title">CS-301: Database Systems</div>
+                            <div class="schedule-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Room 204, B Block</span>
+                                <span><i class="fas fa-users"></i> 32 Students</span>
+                            </div>
+                        </div>
+                        <div class="schedule-actions">
+                            <button class="btn-attendance">Attendance</button>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">11:00 - 12:30 PM</div>
+                        <div class="schedule-content">
+                            <div class="schedule-title">CS-405: Java</div>
+                            <div class="schedule-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Room 105, B Block</span>
+                                <span><i class="fas fa-users"></i> 24 Students</span>
+                            </div>
+                        </div>
+                        <div class="schedule-actions">
+                            <button class="btn-attendance">Attendance</button>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">02:00 - 03:30 PM</div>
+                        <div class="schedule-content">
+                            <div class="schedule-title">CS-201: Advanced Programming</div>
+                            <div class="schedule-details">
+                                <span><i class="fas fa-map-marker-alt"></i> Lab 302, B Block</span>
+                                <span><i class="fas fa-users"></i> 28 Students</span>
+                            </div>
+                        </div>
+                        <div class="schedule-actions">
+                            <button class="btn-attendance">Attendance</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assignments to Grade -->
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <h2 class="section-title">Assignments to Grade</h2>
+                    <a href="#" class="section-action">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <table class="assignments-table">
+                    <thead>
+                        <tr>
+                            <th>Assignment</th>
+                            <th>Course</th>
+                            <th>Submissions</th>
+                            <th>Deadline</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Project Proposal</td>
+                            <td>CS-301</td>
+                            <td>28/32</td>
+                            <td>Mar 15, 2025</td>
+                            <td><button class="action-btn">Grade</button></td>
+                        </tr>
+                        <tr>
+                            <td>Assignment 4</td>
+                            <td>CS-201</td>
+                            <td>24/28</td>
+                            <td>Mar 18, 2025</td>
+                            <td><button class="action-btn">Grade</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mid-term Paper</td>
+                            <td>CS-405</td>
+                            <td>20/24</td>
+                            <td>Mar 10, 2025</td>
+                            <td><button class="action-btn">Grade</button></td>
+                        </tr>
+                        <tr>
+                            <td>Lab Exercise 5</td>
+                            <td>CS-201</td>
+                            <td>26/28</td>
+                            <td>Mar 08, 2025</td>
+                            <td><button class="action-btn">Grade</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Student Performance -->
+        <div class="dashboard-section">
+            <div class="section-header">
+                <h2 class="section-title">Course Performance Overview</h2>
+                <a href="#" class="section-action">Detailed Analytics <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="course-performance-grid">
+                <div class="performance-card">
+                    <div class="performance-header">
+                        <h3>CS-301: Database Systems</h3>
+                        <div class="average-grade">B+</div>
+                    </div>
+                    <div class="performance-stats">
+                        <div class="stat-row">
+                            <div class="stat-label">Assignments</div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 82%;"></div>
+                            </div>
+                            <div class="stat-value">82%</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Midterm Exam</div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 75%;"></div>
+                            </div>
+                            <div class="stat-value">75%</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Attendance</div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 90%;"></div>
+                            </div>
+                            <div class="stat-value">90%</div>
+                        </div>
+                    </div>
+                    <div class="action-row">
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="performance-card">
+                    <div class="performance-header">
+                        <h3>CS-201: Advanced Programming</h3>
+                        <div class="average-grade">A-</div>
+                    </div>
+                    <div class="performance-stats">
+                        <div class="stat-row">
+                            <div class="stat-label">Assignments</div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 88%;"></div>
+                            </div>
+                            <div class="stat-value">88%</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Midterm Exam</div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 85%;"></div>
+                            </div>
+                            <div class="stat-value">85%</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Attendance</div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 82%;"></div>
+                            </div>
+                            <div class="stat-value">82%</div>
+                        </div>
+                    </div>
+                    <div class="action-row">
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
